@@ -66,16 +66,16 @@ ul.sf-menu li li li.sfHover ul {
 	color:			#fff;
 }
 .sf-menu li {
-	background:		#356aa0;
+	background:		url(../images/bg-header.gif) 0 0 repeat;
 }
 .sf-menu li li {
-	background:		#366bc1;
+	background:		url(../images/bg-header.gif) 0 0 repeat;
 }
 .sf-menu li li li {
-	background:		#4096ee;
+	background:		url(../images/bg-header.gif) 0 0 repeat;
 }
 .sf-menu li li li li {
-	background:		#40c6ee;
+	background:		url(../images/bg-header.gif) 0 0 repeat;
 }
 .sf-menu li:hover, .sf-menu li.sfHover,
 .sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active {
