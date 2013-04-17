@@ -158,6 +158,8 @@ li.sfHover > a > .sf-sub-indicator {
 }
 
 .sf-menu ul li a{
+	display: block;
 	border-top: 1px solid rgba(255,255,255,.5);
+	border-top: 1px solid #fff !important;
 }
 
