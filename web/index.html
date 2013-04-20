@@ -19,7 +19,19 @@
 
 	<script>
 	$(document).ready(function(){
-		$('#site-nav').superfish({});
+		
+		$("#header").load(
+			"header.html",
+			function() {
+				$("#menuhomepage").addClass("current");
+				$('#site-nav').superfish({
+					animation: 	{height:"show"},
+			        delay:		100,
+			        speed:		10,
+			        autoArrows:	true
+			    });
+			}
+		); 
 		
 		$('.slider')._TMS({
 			show:0,
@@ -53,49 +65,7 @@
 	<![endif]-->
   </head>
 <body>
-	<div id="header"> 
-		<div class="header-container"> 
-			<div class="header-wrap">                 	
-				<h1><a href="index.html"><img src="images/logo.png" alt=""></a></h1> 
-					<ul class="sf-menu" id="site-nav">
-						<li class="current">
-							<a href="#">主页</a>
-						</li>
-						<li >
-							<a href="#">预约维修</a>
-						</li>
-						<li>
-							<a href="#">维修论坛</a>
-							<ul>
-								<li><a href="#">专家在线</a></li>
-								<li><a href="#">维修案例</a></li>
-								<li><a href="#">养车心的</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="#">车务咨询</a>
-							<ul>
-								<li><a href="#">车辆续保</a></li>
-								<li><a href="#">违章处理</a></li>
-								<li><a href="#">事故处理</a></li>
-								<li><a href="#">车辆年检</a></li>
-								<li><a href="#">驾证年审</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="#">互动平台</a>
-							<ul>
-								<li><a href="#">活动公告</a></li>
-								<li><a href="#">车主表扬</a></li>
-								<li><a href="#">车主投诉</a></li>
-								<li><a href="#">车主建议</a></li>
-							</ul>
-						</li>	
-					</ul>
-					<div class="clear"></div>
-			</div>
-		</div>
-	</div>  
+	<div id="header"></div>
 	<div id="slide">
 		<div class="slider">
 			<ul class="items">
@@ -208,7 +178,9 @@
 	<!--==============================footer=================================-->
 	<div class="clear"></div>
 	<footer>
-		<div class="soc-icons"><span>Follow Us:</span><a href="#"><img src="images/icon-1.jpg" alt=""></a><a href="#"><img src="images/icon-2.jpg" alt=""></a><a href="#"><img src="images/icon-3.jpg" alt=""></a></div>
+		<div class="soc-icons">
+<!-- 			<span>Follow Us:</span><a href="#"><img src="images/icon-1.jpg" alt=""></a><a href="#"><img src="images/icon-2.jpg" alt=""></a><a href="#"><img src="images/icon-3.jpg" alt=""></a> -->
+		</div>
 	</footer>	
 </body>
 </html>

@@ -48,7 +48,7 @@ ul.menu li a {font-size:25px; line-height:30px; color:#fff; display:inline-block
 ul.menu li a:hover , ul.menu li.current a { background-color:#b43129; }
 .header-container{
 	background:url(../images/bg-header.gif) 0 0 repeat; border-bottom:#fff 1px solid;
-	width:100%;  padding-bottom:47px;
+	width:100%;  padding-bottom:20px;
 	text-align: center;
 }
 
@@ -311,3 +311,8 @@ img, .png {
 	margin-left: 40px;
 	margin-top: 6px;
 }
+
+#content .information p {margin:20px 0px;}
+#content .title {font-size:26px;text-align: center; line-height:40px; margin: 40px 0px;}
+#content .title h1 {border-bottom:1px solid gray; padding-bottom: 5px;}
+
