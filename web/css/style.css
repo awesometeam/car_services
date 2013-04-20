@@ -312,7 +312,7 @@ img, .png {
 	margin-top: 6px;
 }
 
-#content .information p {margin:20px 0px;}
-#content .title {font-size:26px;text-align: center; line-height:40px; margin: 40px 0px;}
-#content .title h1 {border-bottom:1px solid gray; padding-bottom: 5px;}
+.peccancy-processing .information p {margin:20px 0px;}
+.peccancy-processing .title {font-size:26px;text-align: center; line-height:40px; margin: 40px 0px;}
+.peccancy-processing .title h1 {border-bottom:1px solid gray; padding-bottom: 5px;}
 

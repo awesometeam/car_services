@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh">
 	<head>
-	<title>Home</title>
+	<title>南峰汽修</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
@@ -32,6 +32,8 @@
 			    });
 			}
 		); 
+		
+		$("#footer").load("footer.html"); 
 		
 		$('.slider')._TMS({
 			show:0,
@@ -177,10 +179,6 @@
 	</section> 
 	<!--==============================footer=================================-->
 	<div class="clear"></div>
-	<footer>
-		<div class="soc-icons">
-<!-- 			<span>Follow Us:</span><a href="#"><img src="images/icon-1.jpg" alt=""></a><a href="#"><img src="images/icon-2.jpg" alt=""></a><a href="#"><img src="images/icon-3.jpg" alt=""></a> -->
-		</div>
-	</footer>	
+	<div id="footer"></div>
 </body>
 </html>
