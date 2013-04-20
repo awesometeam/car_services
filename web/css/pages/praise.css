@@ -1,0 +1,6 @@
+@CHARSET "UTF-8";
+
+.praise {line-height: 30px;}
+.praise .item {padding-left: 10px;border-bottom:1px dotted gray;}
+.praise .item .content{font-size: 14px;}
+.praise .item .date{font-size: 12px; color: gray;float:right;}
