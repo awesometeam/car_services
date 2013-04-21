@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="zh">
 	<head>
-	<title>Home</title>
+	<title>南峰汽修</title>
 	<meta charset="utf-8">
+	<meta name="keywords" content="南峰汽修,南峰,南峰汽修长" />
+	<meta name="description" content="南峰汽修" />
 	<link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
 	<link rel="stylesheet" type="text/css" media="screen" href="css/slider.css">  
@@ -12,8 +14,30 @@
 	<script type="text/javascript" src="http://api.map.baidu.com/api?v=1.4"></script>
 	<script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.4/src/SearchInfoWindow_min.js"></script>
 
+
+	<script src="js/hoverIntent.js"></script>
+	<script src="js/superfish.js"></script>
+	<link rel="stylesheet" href="css/nav.css" media="screen">
+
 	<script>
+	
 	$(document).ready(function(){
+		
+		$("#header").load(
+			"header.html",
+			function() {
+				$("#menuhomepage").addClass("current");
+				$('#site-nav').superfish({
+					animation: 	{height:"show"},
+			        delay:		100,
+			        speed:		10,
+			        autoArrows:	true
+			    });
+			}
+		); 
+		
+		$("#footer").load("footer.html"); 
+		
 		$('.slider')._TMS({
 			show:0,
 			pauseOnHover:true,
@@ -30,14 +54,17 @@
 			waitBannerAnimation:false,
 			progressBar:false
 		});
+		
 		var map = new BMap.Map('location');
-		var poi = new BMap.Point(116.307852,40.057031);
+		var poi = new BMap.Point(118.613291,24.927945);
 		map.centerAndZoom(poi, 16);
 		map.enableScrollWheelZoom();
 		var marker = new BMap.Marker(poi); 
 		marker.addEventListener("click", function(e){})
-		map.addOverlay(marker); 
+		map.addOverlay(marker);
+		 
 	});
+	
 	</script>
     <!--[if lt IE 9]>
    		<script type="text/javascript" src="js/html5.js"></script>
@@ -45,22 +72,7 @@
 	<![endif]-->
   </head>
 <body>
-	<div id="header"> 
-		<div class="header-container"> 
-			<div class="header-wrap">                 	
-				<h1><a href="index.html"><img src="images/logo.png" alt=""></a></h1> 
-				<nav>  
-					<ul class="menu">
-						<li class="current"><a href="index.html">主页</a></li>
-						<li><a href="#">关于我们</a></li>
-						<li><a href="#">论坛</a></li>
-						<li><a href="#">在线预约</a></li>
-					</ul>
-				</nav>
-				<div class="clear"></div>
-			</div>
-		</div>
-	</div>  
+	<div id="header"></div>
 	<div id="slide">
 		<div class="slider">
 			<ul class="items">
@@ -164,16 +176,14 @@
 			<div class="ourCommitment">
 				<h1 class="ourCommitmentTitle">我们的宣言</h1>
 				<p class="ourCommitmentItem">
-				北京中车行高新技术有限公司针对广大车主的需求，以网络和电话等多种便捷的形式为车主提供全面服务。从路况信息到汽修养护，各种车主关心的信息一应俱全。我们竭诚为车主解决爱车烦恼，使您轻松体验驾驶乐趣。 
+				南峰汽修针对广大车主的需求，以网络和电话等多种便捷的形式为车主提供全面服务。从路况信息到汽修养护，各种车主关心的信息一应俱全。我们竭诚为车主解决爱车烦恼，使您轻松体验驾驶乐趣。 
 				</p>
-				<p class="signature">北京中车行高新技术有限公司</p>
+				<p class="signature">南峰汽修</p>
 			</div>
 		</div>
 	</section> 
 	<!--==============================footer=================================-->
 	<div class="clear"></div>
-	<footer>
-		<div class="soc-icons"><span>Follow Us:</span><a href="#"><img src="images/icon-1.jpg" alt=""></a><a href="#"><img src="images/icon-2.jpg" alt=""></a><a href="#"><img src="images/icon-3.jpg" alt=""></a></div>
-	</footer>	
+	<div id="footer"></div>
 </body>
 </html>

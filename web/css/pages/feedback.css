@@ -1,0 +1,63 @@
+@CHARSET "UTF-8";
+
+#feedback textarea {
+	border: 1px solid lightGrey;
+	padding: 0.5em;
+	width: 90%;
+}
+
+#description {margin:10px 0px 20px 5px;;width:90%;padding:10px;border-bottom:1px dotted gray;}
+
+#feedback .item
+{
+	margin:10px 5px;
+}
+
+#feedback .item span
+{
+/* 	width: 50px; */
+/* 	height: 100%; */
+	
+	padding-left: 25px;
+}
+
+#feedback .item span.error {
+	background: url(/zhgy/images/register.png) 5px -79px no-repeat;
+}
+
+#feedback .item span.correct {
+	background: url(/zhgy/images/register.png) 5px 2px no-repeat;
+}
+
+#feedback .item span.init {
+	background: url(/zhgy/images/register.png) 5px -134px no-repeat;
+}
+
+#feedback input {
+	border: 1px solid lightGrey;
+	margin-top: 0;
+	line-height: 1.2;
+	padding: 0.4em 0.3em;
+	font-family: Microsoft Yahei;
+}
+
+#feedback form {
+    padding-top: 10px;
+}
+
+#feedback form .label {
+	float:left;
+	width: 70px;
+}
+#feedback form #feedback-submit {
+	width: 10em;
+	padding: 0.2em 3em;
+	text-align: center;
+}
+
+#infodetail #description {
+	width: 700px;
+	line-height: 25px;
+	font-size: 13px;
+/* 	font-family: Calibri; */
+}

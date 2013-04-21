@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+	<title>活动公告</title>
+	<meta charset="utf-8">
+	<meta name="keywords" content="南峰汽修,南峰,南峰汽修长" />
+	<meta name="description" content="南峰汽修" />
+	<link rel="stylesheet" type="text/css" media="screen" href="../../css/reset.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="../../css/style.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="../../css/slider.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="../../css/pages/praise.css">    
+	<script src="../../js/jquery-1.7.min.js"></script>
+	<script src="../../js/jquery.easing.1.3.js"></script>
+	<script src="../../js/tms-0.4.1.js"></script>
+	<script type="text/javascript" src="../../js/pages/feedback.js"></script>
+
+	<script src="../../js/hoverIntent.js"></script>
+	<script src="../../js/superfish.js"></script>
+	<link rel="stylesheet" href="../../css/nav.css" media="screen">
+	<link rel="stylesheet" href="../../css/bbs.css" media="screen">
+	<link rel="stylesheet" type="text/css" media="screen" href="../../css/pages/feedback.css">  
+
+	<script>
+	$(document).ready(function(){
+		
+		$("#header").load(
+			"../../header.html",
+			function() {
+				$("#menu-notice").addClass("current");
+				$('#site-nav').superfish({
+					animation: 	{height:"show"},
+			        delay:		100,
+			        speed:		10,
+			        autoArrows:	true
+			    });
+			}
+		); 
+		
+		$("#sider").load("../../sider_bar.html");
+		
+		$('.slider')._TMS({
+			show:0,
+			pauseOnHover:true,
+			prevBu:false,
+			nextBu:false,
+			playBu:false,
+			duration:800,
+			preset:'fade',
+			pagination:true,
+			pagNums:false,
+			slideshow:7000,
+			numStatus:false,
+			banners:'fade',
+			waitBannerAnimation:false,
+			progressBar:false
+		});
+		
+	});
+		
+	</script>
+    <!--[if lt IE 9]>
+   		<script type="text/javascript" src="js/html5.js"></script>
+    	<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+	<![endif]-->
+  </head>
+<body>
+	<div id="header"></div>
+	<!--==============================content================================-->
+	<div id="main-content">
+		<div id="sider"></div>
+		<div id="content" class="main praise" style="width:700px;padding:0px;margin-top:10px;border-top: 1px dotted gray;">
+	      	暂无公告
+		</div>
+	</div>
+	<!--==============================footer=================================-->
+	<div class="clear"></div>
+<!-- 	<footer> -->
+<!-- 		<div class="soc-icons"> -->
+<!-- 			<span>Follow Us:</span><a href="#"><img src="images/icon-1.jpg" alt=""></a><a href="#"><img src="images/icon-2.jpg" alt=""></a><a href="#"><img src="images/icon-3.jpg" alt=""></a> -->
+<!-- 		</div> -->
+<!-- 	</footer>	 -->
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+	<title>南峰汽修-违章处理</title>
+	<meta charset="utf-8">
+	<meta name="keywords" content="南峰汽修,南峰,南峰汽修长" />
+	<meta name="description" content="南峰汽修" />
+	<link rel="stylesheet" type="text/css" media="screen" href="../../css/reset.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="../../css/style.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="../../css/slider.css">  
+	<script src="../../js/jquery-1.7.min.js"></script>
+	<script src="../../js/jquery.easing.1.3.js"></script>
+	<script src="../../js/tms-0.4.1.js"></script>
+
+	<script src="../../js/hoverIntent.js"></script>
+	<script src="../../js/superfish.js"></script>
+	<link rel="stylesheet" href="../../css/nav.css" media="screen">
+	<link rel="stylesheet" href="../../css/bbs.css" media="screen">
+	<script>
+	$(document).ready(function(){
+		
+		$("#_header").load(
+			"../../header.html",
+			function() {
+				$("#peccancyProcessing").addClass("current");
+				$('#site-nav').superfish({
+					animation: 	{height:"show"},
+			        delay:		100,
+			        speed:		10,
+			        autoArrows:	true
+			    });
+			}
+		); 
+		
+		$("#sider").load("../../sider_bar.html");
+		
+		$('.slider')._TMS({
+			show:0,
+			pauseOnHover:true,
+			prevBu:false,
+			nextBu:false,
+			playBu:false,
+			duration:800,
+			preset:'fade',
+			pagination:true,
+			pagNums:false,
+			slideshow:7000,
+			numStatus:false,
+			banners:'fade',
+			waitBannerAnimation:false,
+			progressBar:false
+		});
+		
+		var map = new BMap.Map('location');
+		var poi = new BMap.Point(116.307852,40.057031);
+		map.centerAndZoom(poi, 16);
+		map.enableScrollWheelZoom();
+		var marker = new BMap.Marker(poi); 
+		marker.addEventListener("click", function(e){})
+		map.addOverlay(marker); 
+	});
+	</script>
+    <!--[if lt IE 9]>
+   		<script type="text/javascript" src="js/html5.js"></script>
+    	<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+	<![endif]-->
+  </head>
+<body>
+	<div id="_header"></div>
+<!-- 	<div id="slide"> -->
+<!-- 		<div class="slider"> -->
+<!-- 			<ul class="items"> -->
+<!-- 				<li><img src="images/slider-1.jpg" alt="" /><div class="banner">汽车维修 我们更专业</div></li> -->
+<!-- 				<li><img src="images/slider-2.jpg" alt="" /><div class="banner">汽车保养 我们更透明</div></li> -->
+<!-- 				<li><img src="images/slider-3.jpg" alt="" /><div class="banner">汽车清洗 我们更细心</div></li> -->
+<!-- 			</ul> -->
+<!-- 		</div> -->
+<!-- 	</div> -->
+	<!--==============================content================================-->
+	<div id="main-content">
+		<div id="sider"></div>
+		<div id="content" class="main peccancy-processing" style="width:700px;height:1550px;padding:0px;">
+			<div class="title">
+				<h1>违章扣分及罚款处理流程及常见问题答疑</h1>
+			</div>
+			<div class="information">
+				<p>违章是大部分车友都会遇到的问题。违章后如何处理？扣分及罚款流程是怎样的？遭遇异地违章及套牌怎么办？我们将为你一一解答。</p>
+				<p><b>交通违章处理流程</b></p>
+				<p><b>1、网上查询违章记录</b></p>
+				<p>全国绝大部分地区的交管部门都开通了网站违章查询的功能。以泉州为例，车主需要输入自己的车牌号及发动机号，便可查询到该车的违章记录(如下图所示)。</p>
+				<div><img src="../../images/information/1.jpg"></img></div>
+				<p>在违章记录列表中即可查询到所有未处理违章的记录，记录中有违章的时间、地点、违章原因以及详细的罚款和扣分情况。</p>
+				<p><b>2、处理违章</b></p>
+				<p>一般来说，违章处理需要驾驶人到交通队进行确认和处理后，到银行办理罚款业务。</p>
+				<p>现在随着软硬件的升级，以北京市为例，可通过开通新版牡丹交通卡的网银功能，直接通过网银缴纳罚款。目前可以在网上缴纳的罚款包括三类:一是“现场执法”时交警直接记录在司机交通卡上的违法行为；二是交警对持有北京驾照的司机开具的纸罚单(即800罚单)；三是适用简易程序的京牌车的非现场违法行为。</p>
+				<p>但是也并非所有违章都可以通过网银处理。如果待处理违法行为记分达到或超过12分，司机就必须去交通队执法站办理。同时，如果单笔罚款额超过了200元，比如“超速50%以上”，也不能通过网上银行缴款。在网上处理“非现场”时，不能提供图像或视频证据，司机如果对违法行为有疑义，也只能先去交通队执法站确认后再处理。</p>
+				<p><b>3、常见问题答疑</b></p>
+				<p>1. 违章超过12分怎么办？</p>
+				<p>对于新手而言，很容易多次违章导致违章积分过多。当年违章扣分超过12分持证者需回炉重考理论。除了不违章这样治标的方法外，那么有没有“钻空子”处理的办法呢？</p>
+				<p>首先是从发证之日起，每年的积分将清零。因此可在前一年积分清零之前处理一部分的违章，之后再利用第二年的积分处理剩下的违章。</p>
+				<p>第二是 一辆车多人驾驶，多人对应的违章分别处理。适当利用别人的驾照刷分，这也是一种“潜规则”。部分执行较严格的地区此法行不通，这样的话，就只能回炉重新学习了。</p>
+				<p>2. 异地违章如何处理？</p>
+				<p>现如今，异地违章已实现全国联网。因此在异地有意或无意的违章都要付出代价了。异地违章主要有2种处理办法。</p>
+				<p>●本人到当地交通管理部门接受处罚，因各地的处罚方式不同，请注意携带驾驶证和行驶证或复印件。 </p>
+				<p>特点：手续繁琐、过程复杂。 </p>
+				<p>●通过异地朋友代办，如果违章当地有朋友的话，可以直接把将违章通知单、驾驶证、行驶证、身份证等证件的原件或复印件递送给你的朋友，请朋友代劳办理。 </p>
+				<p>特点：一劳永逸，可节省不必要的舟车劳顿，但由于某些省市交管部门不接受他人代办，仍需驾驶员本人办理。 </p>
+				<p>3. 车被套牌产生违章怎么处理？</p>
+				<p>一旦遭遇被“套牌”，违法记录如何消除?交警部门表示，车主若发现自己的车被套牌，可以在机动车登记地、违法行为发生地公安机关交通管理部门报案。警方会通过交通违法证据图片比对，只要发现套牌违法车辆与被套牌车辆特征明显不符，或者报案人能够提供证据证明车辆号牌被套用，就能按照相关规定撤销使用套牌期间发生的交通违法信息。</p>
+				<p>如果车被套牌，处理过程相对会比较繁琐，有可能会因此耽误您的验车日程。因此建议车主勤查违章记录，以便发现有异常时及时报案处理。部分地区交管部门可提供违章短信通知的业务，这种随时提醒的方式也有助于车主随时掌握自己车辆的违章情况</p>
+			</div>
+		</div> 
+		<!--==============================footer=================================-->
+		<div class="cleaner"></div>
+	</div>
+	<footer>
+		<div class="soc-icons">
+<!-- 			<span>Follow Us:</span><a href="#"><img src="images/icon-1.jpg" alt=""></a><a href="#"><img src="images/icon-2.jpg" alt=""></a><a href="#"><img src="images/icon-3.jpg" alt=""></a> -->
+		</div>
+	</footer>	
+</body>
+</html>
