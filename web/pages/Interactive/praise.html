@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="zh">
 	<head>
-	<title>南峰汽修-车主表扬</title>
+	<title>车主表扬</title>
 	<meta charset="utf-8">
+	<meta name="keywords" content="南峰汽修,南峰,南峰汽修长" />
+	<meta name="description" content="南峰汽修" />
 	<link rel="stylesheet" type="text/css" media="screen" href="../../css/reset.css">
 	<link rel="stylesheet" type="text/css" media="screen" href="../../css/style.css">
 	<link rel="stylesheet" type="text/css" media="screen" href="../../css/slider.css">
@@ -16,6 +18,8 @@
 	<script src="../../js/hoverIntent.js"></script>
 	<script src="../../js/superfish.js"></script>
 	<link rel="stylesheet" href="../../css/nav.css" media="screen">
+	<link rel="stylesheet" href="../../css/bbs.css" media="screen">
+	<link rel="stylesheet" type="text/css" media="screen" href="../../css/pages/feedback.css">  
 
 	<script>
 	$(document).ready(function(){
@@ -32,6 +36,8 @@
 			    });
 			}
 		); 
+		
+		$("#sider").load("../../sider_bar.html");
 		
 		$('.slider')._TMS({
 			show:0,
@@ -50,13 +56,6 @@
 			progressBar:false
 		});
 		
-		var map = new BMap.Map('location');
-		var poi = new BMap.Point(116.307852,40.057031);
-		map.centerAndZoom(poi, 16);
-		map.enableScrollWheelZoom();
-		var marker = new BMap.Marker(poi); 
-		marker.addEventListener("click", function(e){})
-		map.addOverlay(marker); 
 	});
 	</script>
     <!--[if lt IE 9]>
@@ -67,38 +66,116 @@
 <body>
 	<div id="header"></div>
 	<!--==============================content================================-->
-	<div id="content" class="praise" style="width:650px;padding:0px;margin-top:40px;">
-      	<div class="item">
-      		<div class="content">维修师傅很专业</div>
-      		<div class="date">2013-06-06</div>
-      		<div class="cleaner"></div>
-      	</div>
-      	<div class="item">
-      		<div class="content">服务很不错，检查很仔细，及时发现发动机比较脏，主动要求额外加了罐发动机清洗液。</div>
-      		<div class="date">2013-06-06</div>
-      		<div class="cleaner"></div>
-      	</div>
-      	<div class="item">
-      		<div class="content">还不错，师傅比较热心。预约后很快就安排保修。</div>
-      		<div class="date">2013-06-06</div>
-      		<div class="cleaner"></div>
-      	</div>
-      	<div class="item">
-      		<div class="content">服务不错，师傅很耐心，下次再去：）</div>
-      		<div class="date">2013-06-06</div>
-      		<div class="cleaner"></div>
-      	</div>
-      	<div class="item">
-      		<div class="content">态度很不错，很认真讲解车辆的保养问题。会再去。</div>
-      		<div class="date">2013-06-06</div>
-      		<div class="cleaner"></div>
-      	</div>
-      	<div class="item">
-      		<div class="content">评价 产品一流,服务一流,价格公道,形象良好,优质产品,服务为先 </div>
-      		<div class="date">2013-06-06</div>
-      		<div class="cleaner"></div>
-      	</div>
-      	
+	<div id="main-content">
+		<div id="sider"></div>
+		<div id="content" class="main praise" style="width:700px;padding:0px;margin-top:10px;border-top: 1px dotted gray;">
+	      	<div class="item">
+	      		<div class="content">泉州客户：维修师傅很专业</div>
+	      		<div class="date">2013-06-06</div>
+	      		<div class="cleaner"></div>
+	      	</div>
+	      	<div class="item">
+	      		<div class="content">晋江客户：服务很不错，检查很仔细，及时发现发动机比较脏，主动要求额外加了罐发动机清洗液。</div>
+	      		<div class="date">2013-06-06</div>
+	      		<div class="cleaner"></div>
+	      	</div>
+	      	<div class="item">
+	      		<div class="content">泉州客户：还不错，师傅比较热心。预约后很快就安排保修。</div>
+	      		<div class="date">2013-06-06</div>
+	      		<div class="cleaner"></div>
+	      	</div>
+	      	<div class="item">
+	      		<div class="content">泉州客户：服务不错，师傅很耐心，下次再去：）</div>
+	      		<div class="date">2013-06-06</div>
+	      		<div class="cleaner"></div>
+	      	</div>
+	      	<div class="item">
+	      		<div class="content">厦门客户：态度很不错，很认真讲解车辆的保养问题。会再去。</div>
+	      		<div class="date">2013-06-06</div>
+	      		<div class="cleaner"></div>
+	      	</div>
+	      	<div class="item">
+	      		<div class="content">泉州客户：维修师傅很专业</div>
+	      		<div class="date">2013-06-06</div>
+	      		<div class="cleaner"></div>
+	      	</div>
+	      	<div class="item">
+	      		<div class="content">晋江客户：服务很不错，检查很仔细，及时发现发动机比较脏，主动要求额外加了罐发动机清洗液。</div>
+	      		<div class="date">2013-06-06</div>
+	      		<div class="cleaner"></div>
+	      	</div>
+	      	<div class="item">
+	      		<div class="content">泉州客户：还不错，师傅比较热心。预约后很快就安排保修。</div>
+	      		<div class="date">2013-06-06</div>
+	      		<div class="cleaner"></div>
+	      	</div>
+	      	<div class="item">
+	      		<div class="content">泉州客户：服务不错，师傅很耐心，下次再去：）</div>
+	      		<div class="date">2013-06-06</div>
+	      		<div class="cleaner"></div>
+	      	</div>
+	      	<div class="item">
+	      		<div class="content">厦门客户：态度很不错，很认真讲解车辆的保养问题。会再去。</div>
+	      		<div class="date">2013-06-06</div>
+	      		<div class="cleaner"></div>
+	      	</div>
+	      	<div class="item">
+	      		<div class="content">泉州客户：维修师傅很专业</div>
+	      		<div class="date">2013-06-06</div>
+	      		<div class="cleaner"></div>
+	      	</div>
+	      	<div class="item">
+	      		<div class="content">晋江客户：服务很不错，检查很仔细，及时发现发动机比较脏，主动要求额外加了罐发动机清洗液。</div>
+	      		<div class="date">2013-06-06</div>
+	      		<div class="cleaner"></div>
+	      	</div>
+	      	<div class="item">
+	      		<div class="content">泉州客户：还不错，师傅比较热心。预约后很快就安排保修。</div>
+	      		<div class="date">2013-06-06</div>
+	      		<div class="cleaner"></div>
+	      	</div>
+	      	<div class="pg" style="margin:30px 0px;">
+				<a href="#" class="previous">上一页</a>
+				<strong>1</strong>
+				<a href="#">2</a>
+				<a href="#">3</a>
+				<a href="#">4</a>
+				<a href="#">5</a>
+				<a href="#">6</a>
+				<a href="#">7</a>
+				<a href="#">8</a>
+				<a href="#">9</a>
+				<a href="#">10</a>
+				<a href="#" class="last">... 164</a>
+				<a href="#" class="next">下一页</a>
+			</div>
+			<div class="cleaner"></div>
+			<div class="item"></div>
+			<div class="cleaner"></div>
+	      	<div id="feedback">
+		      	<form id="feedback-form" style="margin-top:0px;" method="post" action="MessageController.do">
+				<div class="item">
+					<p class="label" style="width: 50px;">姓名:</p>
+					<input type="text" alertmsg="请填写您的称呼" required="true" name="author" id="author">
+					<span id="author-check" class="init">必填</span>
+				</div>
+<!-- 				<div class="item"> -->
+<!-- 					<p class="label">电子邮箱:</p> -->
+<!-- 					<input type="text" alertmsg="请填写正确email地址" ver-type="email" required="true" name="email" id="email" style="width:300px;"> -->
+<!-- 					<span id="email-check" class="init">必填</span> -->
+<!-- 				</div> -->
+				<div class="item">
+<!-- 	       			<p>内容:</p> -->
+	       			<textarea rows="8" style="width: 664px; height: 125px;" alertmsg="请填写您的建议" required="true" name="content" ></textarea>
+				</div>
+				<div class="item">
+					<input type="submit" id="feedback-form-submit" accesskey="s" value="提交">
+				</div>
+				<input type="hidden" name="action" value="leaveMessage_en">
+				<input type="hidden" name="messageid">
+				</form>
+			</div>
+		</div>
 	</div>
 	<!--==============================footer=================================-->
 	<div class="clear"></div>
