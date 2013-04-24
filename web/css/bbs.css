@@ -76,6 +76,20 @@
 	border: 1px solid #cacaca;
 }
 
+#status span{
+	display: block;
+	height: 18px;
+	font-size: 12px;
+	color: #444444;
+	float: left;
+	padding: 7px;
+}
+#status .status-arrow{
+	background: url(../images/status-item.gif) 0 0 no-repeat;
+	width: 27px;
+	padding: 0;
+	height: 32px;
+}
 #search-topic {
 	float: right;
 }
@@ -89,7 +103,7 @@
 #topics-header{
 	width: 720px;
 	height: 37px;
-	background: url(../images/topics-header-bg.gif) 0 0 repeat-x;
+	background: url(../images/topics-header-bg.gif) 0 0 no-repeat;
 }
 
 .topic-item{
