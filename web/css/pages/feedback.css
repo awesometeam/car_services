@@ -22,15 +22,15 @@
 }
 
 #feedback .item span.error {
-	background: url(/zhgy/images/register.png) 5px -79px no-repeat;
+	background: url(/car_services/images/register.png) 5px -79px no-repeat;
 }
 
 #feedback .item span.correct {
-	background: url(/zhgy/images/register.png) 5px 2px no-repeat;
+	background: url(/car_services/images/register.png) 5px 2px no-repeat;
 }
 
 #feedback .item span.init {
-	background: url(/zhgy/images/register.png) 5px -134px no-repeat;
+	background: url(/car_services/images/register.png) 5px -134px no-repeat;
 }
 
 #feedback input {

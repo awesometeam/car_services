@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="com.tornado.entity">
+	<class
+		name="Message"
+		table="message"
+	>
+		<meta attribute="sync-DAO">false</meta>
+		<id
+			name="Id"
+			type="java.lang.Long"
+			column="id"
+		>
+			<generator class="increment"/>
+		</id>
+
+		<property
+			name="Title"
+			column="title"
+			type="string"
+			not-null="false"
+			length="100"
+		/>
+		<property
+			name="Content"
+			column="content"
+			type="string"
+			not-null="false"
+		/>
+		<property
+			name="Author"
+			column="author"
+			type="string"
+			not-null="false"
+			length="100"
+		/>
+		<property
+			name="Date"
+			column="date"
+			type="date"
+			not-null="false"
+			length="10"
+		/>
+		<property
+			name="Type"
+			column="type"
+			type="integer"
+			not-null="false"
+			length="10"
+		/>
+		<property
+			name="Replyid"
+			column="replyid"
+			type="java.lang.Long"
+			not-null="false"
+			length="19"
+		/>
+		<property
+			name="Permissions"
+			column="permissions"
+			type="string"
+			not-null="false"
+			length="100"
+		/>
+		<property
+			name="TheOrder"
+			column="the_order"
+			type="java.lang.Long"
+			not-null="false"
+			length="19"
+		/>
+		<property
+			name="Reserved"
+			column="reserved"
+			type="string"
+			not-null="false"
+			length="2"
+		/>
+
+
+	</class>	
+</hibernate-mapping>

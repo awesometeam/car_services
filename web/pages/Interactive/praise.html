@@ -153,7 +153,8 @@
 			<div class="item"></div>
 			<div class="cleaner"></div>
 	      	<div id="feedback">
-		      	<form id="feedback-form" style="margin-top:0px;" method="post" action="MessageController.do">
+		      	<form id="feedback-form" target="praise-iframe" style="margin-top:0px;" method="post" 
+		      		action="MessageController.do?action=leavePraiseMessage">
 				<div class="item">
 					<p class="label" style="width: 50px;">姓名:</p>
 					<input type="text" alertmsg="请填写您的称呼" required="true" name="author" id="author">
@@ -171,8 +172,7 @@
 				<div class="item">
 					<input type="submit" id="feedback-form-submit" accesskey="s" value="提交">
 				</div>
-				<input type="hidden" name="action" value="leaveMessage_en">
-				<input type="hidden" name="messageid">
+				<iframe id="praise-iframe" style="display:none;" name="praise-iframe"></iframe>
 				</form>
 			</div>
 		</div>

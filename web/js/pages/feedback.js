@@ -1,16 +1,20 @@
-/**
- * 
- */
-
+var isLeaveMessage = false;
 $(document).ready(function(){
 	
 	if($("#infodetail").height() < 300)
 		$("#infodetail").height(300);
 	
 	$("#feedback-form-submit").click(function() {
+		if(isLeaveMessage)
+		{
+			alert("您已经成功留言，我们将尽快核实并处理您的留言！");
+			return false;
+		}
 		if(FormUtil.check(document.getElementById("feedback"),true))
 		{
 			$("#feedback-form").submit();
+			isLeaveMessage = true;
+			alert("感谢您对我们的关注，我们将尽快处理您的留言！");
 		}
 		return false;
 	});

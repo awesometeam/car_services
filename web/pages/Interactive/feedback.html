@@ -73,7 +73,8 @@
 	      	您的建议将是我们努力的方向
 	      	</div>
 	      		<div id="feedback">
-				<form id="feedback-form" method="post" action="MessageController.do">
+				<form id="feedback-form" method="post" action="MessageController.do?action=leaveSuggestionMessage"
+					target="feedbackiframe">
 				<div class="item">
 					<p class="label">姓名:</p>
 					<input type="text" alertmsg="请填写您的称呼" required="true" name="author" id="author">
@@ -88,10 +89,9 @@
 	       			<p>内容:</p><textarea rows="8" alertmsg="请填写您的建议" required="true" name="content" ></textarea>
 				</div>
 				<div class="item">
-					<input type="submit" id="feedback-form-submit" accesskey="s" value="提交">
+					<input type="button" id="feedback-form-submit" accesskey="s" value="提交">
 				</div>
-				<input type="hidden" name="action" value="leaveMessage_en">
-				<input type="hidden" name="messageid">
+				<iframe style="display:none;" id="feedbackiframe" name="feedbackiframe"></iframe>
 				</form>
 			</div>
 		</div>
