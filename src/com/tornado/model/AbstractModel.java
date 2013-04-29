@@ -124,6 +124,35 @@ public abstract class AbstractModel <T> {
 	}
 	
 	/**
+	 * 查询并且排序
+	 * @param fields 排序字段
+	 * @param isAsc 每个字段是否正序
+	 * @return
+	 */
+	public List<T> listOrderBy(String [] fields,Boolean [] isAsc)
+	{
+		if(fields == null || fields.length==0 || fields.length!=isAsc.length)
+			return list();
+		
+		StringBuffer hql = new StringBuffer();
+		hql.append("from ").append(entityClass.getName()).append(" order by ");
+		for(int i=0;i<fields.length;i++)
+		{
+			hql.append(fields[i]).append(" ");
+			if(isAsc[i])
+				hql.append("asc");
+			else
+				hql.append("desc");
+			hql.append(",");
+		}
+		hql.deleteCharAt(hql.length()-1);
+		
+		Query query=SessionFactoryHelper.getSession().createQuery(hql.toString());
+		
+		return query.list();
+	}
+	
+	/**
 	 * 返回从start开始的count个模型
 	 * @param start
 	 * @param count
